@@ -42,11 +42,11 @@ async def start_message(c, m):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆", url="https://telegram.me/Autoapprovi_bot?startgroup=true&admin=invite_users")],
         [InlineKeyboardButton("• ᴜᴩᴅᴀᴛᴇꜱ •", url="https://telegram.me/alsamovies"),
-         InlineKeyboardButton("• ꜱᴜᴩᴩᴏʀᴛ •", url="https://telegram.me/alsamovies")],
+         InlineKeyboardButton("• ꜱᴜᴩᴩᴏʀᴛ •", url="https://t.me/hollywood_movies_in_hindidubs")],
         [InlineKeyboardButton("⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆", url="https://telegram.me/Autoapprovi_bot?startchannel=true&admin=invite_users")]
     ])
 
-    await m.reply_text(text, reply_markup=buttons)
+    await m.reply_photo(photo="https://envs.sh/3fc.jpg/IMG17042025.jpg", caption=text, reply_markup=buttons)
 
 @Client.on_message(filters.command('help'))
 async def help_message(c,m):
