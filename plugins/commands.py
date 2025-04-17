@@ -148,7 +148,7 @@ async def approve_new(client, m):
     try:
         await retry_with_backoff(5, client.approve_chat_join_request, m.chat.id, m.from_user.id)
         try:
-            await client.send_message(m.from_user.id, "{},\n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 {} 𝖺𝗌 𝖻𝖾𝖾𝗇 𝖠𝖼𝖼𝖾𝗉𝗍𝖾𝖽.".format(m.from_user.first_name, m.chat.title))
+            await client.send_message(m.from_user.id, "{},\n\n𝖸𝗈𝗎𝗋 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖳𝗈 𝖩𝗈𝗂𝗇 {} 𝖺𝗌 𝖻𝖾𝖾𝗇 𝖠𝖼𝖼𝖾𝗉𝗍𝖾𝖽.".format(m.from_user.first_name, m.chat.title) "**<b><blockquote>𝙿𝚘𝚠𝚎𝚛e𝚍 𝙱𝚢 ➥ <a href = 'https://t.me/alsamovies' >× ᏚᎧƝU⁣𓆩💞𓆪</a></blockquote></b>**")
         except:
             pass
     except Exception as e:
